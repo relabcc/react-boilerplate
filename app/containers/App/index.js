@@ -12,11 +12,17 @@ import { Switch, Route } from 'react-router-dom';
 
 import HomePage from 'containers/HomePage/Loadable';
 import AboutPage from 'containers/AboutPage/Loadable';
+import LoginPage from 'containers/LoginPage/Loadable';
+import LogoutPage from 'containers/LogoutPage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import Box from 'components/Box';
 import theme from 'components/ThemeProvider/theme';
+import {
+  UserIsAuthenticated,
+  UserIsNotAuthenticated,
+} from 'services/firebase/authHelper';
 
 export default function App() {
   return (
@@ -30,7 +36,9 @@ export default function App() {
       <Header siteTitle="React.js Boilerplate" />
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route path="/about" component={AboutPage} />
+        <Route path="/about" component={UserIsAuthenticated(AboutPage)} />
+        <Route path="/login" component={UserIsNotAuthenticated(LoginPage)} />
+        <Route path="/logout" component={UserIsAuthenticated(LogoutPage)} />
         <Route path="" component={NotFoundPage} />
       </Switch>
       <Footer />

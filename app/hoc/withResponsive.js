@@ -5,6 +5,6 @@ export default WrappedComp =>
     const browser = state.get('browser');
     return {
       browser,
-      isMobile: browser.lessThan.lg,
+      isMobile: browser.lessThan.md,
     };
   })(WrappedComp);
