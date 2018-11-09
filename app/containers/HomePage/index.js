@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FormattedMessage } from 'react-intl';
 import { FaThumbsUp } from 'react-icons/fa';
 
 import Container from 'components/Container';
@@ -14,12 +15,15 @@ import withResponsive from 'hoc/withResponsive';
 import { mobileOrDesktop } from 'components/ThemeProvider/theme';
 
 import RepoFetcher from '../RepoFetcher';
+import messages from './messages';
 
 const IndexPage = ({ isMobile }) => (
   <Container py="2em">
     <Box>
       <Flex>
-        <Text>Styled Components + Styled System is cool!</Text>
+        <Text>
+          <FormattedMessage {...messages.startProjectHeader} />
+        </Text>
         <Circle
           width="2em"
           bg="blue"
@@ -32,7 +36,7 @@ const IndexPage = ({ isMobile }) => (
         </Circle>
       </Flex>
       <Text fontSize={mobileOrDesktop('1em', '1.5em')}>
-        isMobile: {String(isMobile)}
+        <FormattedMessage {...messages.isMobile} />: {String(isMobile)}
       </Text>
     </Box>
     <BackgroundImage
@@ -43,11 +47,13 @@ const IndexPage = ({ isMobile }) => (
     <RepoFetcher />
     <Box mx="-1em">
       <Button m="0.5em" is={Link} to="/about">
-        Go to About
+        <FormattedMessage {...messages.about} />
       </Button>
-      <Button.secondary m="0.5em">Good Button !</Button.secondary>
+      <Button.secondary m="0.5em">
+        <FormattedMessage {...messages.good} />
+      </Button.secondary>
       <Button m="0.5em" disabled>
-        Not Good
+        <FormattedMessage {...messages.bad} />
       </Button>
     </Box>
   </Container>

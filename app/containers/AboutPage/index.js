@@ -1,18 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FormattedMessage } from 'react-intl';
 
 import Container from 'components/Container';
 import Link from 'components/Link';
-
 import { selectFirebase } from 'services/firebase/selectors';
+
+import messages from './messages';
 
 const AboutPage = ({ profile }) => (
   <Container py="2em">
-    <h1>Hi from the second page</h1>
-    <p>{profile.displayName}, Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
-    <Link mx="1em" to="/logout">
-      Logout
+    <h1>
+      <FormattedMessage {...messages.header} />
+    </h1>
+    <p>
+      <FormattedMessage
+        values={{ name: profile.displayName }}
+        {...messages.welcome}
+      />
+    </p>
+    <Link to="/">
+      <FormattedMessage {...messages.backHome} />
     </Link>
   </Container>
 );

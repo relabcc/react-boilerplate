@@ -3,8 +3,11 @@
  */
 
 import { call, put, select, takeLatest } from 'redux-saga/effects';
-import { LOAD_REPOS } from 'containers/App/constants';
-import { reposLoaded, repoLoadingError } from 'containers/App/actions';
+import {
+  LOAD_REPOS,
+  reposLoaded,
+  repoLoadingError,
+} from 'containers/App/reducer';
 
 import request from 'utils/request';
 import { makeSelectUsername } from './selectors';

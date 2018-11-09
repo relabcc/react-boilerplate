@@ -25,10 +25,9 @@ import Form from './Form';
 import Input from './Input';
 import Section from './Section';
 import messages from './messages';
-import { loadRepos } from '../App/actions';
-import { changeUsername } from './actions';
+import { loadRepos } from '../App/reducer';
 import { makeSelectUsername } from './selectors';
-import reducer from './reducer';
+import reducer, { changeUsername } from './reducer';
 import saga from './saga';
 
 /* eslint-disable react/prefer-stateless-function */
@@ -52,7 +51,7 @@ export class HomePage extends React.PureComponent {
 
     return (
       <Section>
-        <Text.h2>
+        <Text.h2 my="0.5em">
           <FormattedMessage {...messages.trymeHeader} />
         </Text.h2>
         <Form onSubmit={this.props.onSubmitForm}>

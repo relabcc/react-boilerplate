@@ -10,11 +10,11 @@ export const scope = 'boilerplate.containers.RepoFetcher';
 export default defineMessages({
   trymeHeader: {
     id: `${scope}.tryme.header`,
-    defaultMessage: 'Try me!',
+    defaultMessage: '來試試!',
   },
   trymeMessage: {
     id: `${scope}.tryme.message`,
-    defaultMessage: 'Show Github repositories by',
+    defaultMessage: '檢視Github repositories，使用者帳號：',
   },
   trymeAtPrefix: {
     id: `${scope}.tryme.atPrefix`,

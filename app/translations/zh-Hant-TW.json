@@ -1,1 +1,18 @@
-[]
+{
+  "boilerplate.components.Footer.license.message": "This project is licensed under the MIT license.",
+  "boilerplate.components.LoginPage.login": "登入",
+  "boilerplate.containers.AboutPage.backHome": "回到首頁",
+  "boilerplate.containers.AboutPage.header": "這是關於頁",
+  "boilerplate.containers.AboutPage.welcome": "{name}，歡迎來到這一頁",
+  "boilerplate.containers.HomePage.buttons.about": "關於",
+  "boilerplate.containers.HomePage.buttons.bad": "不可點",
+  "boilerplate.containers.HomePage.buttons.good": "範例Button",
+  "boilerplate.containers.HomePage.isMobile": "手機版",
+  "boilerplate.containers.HomePage.start_project.header": "Styled Components + Styled System 超方便！",
+  "boilerplate.containers.LocaleToggle.en": "English",
+  "boilerplate.containers.LocaleToggle.zh-Hant-TW": "繁體中文(台灣)",
+  "boilerplate.containers.NotFoundPage.header": "Page not found.",
+  "boilerplate.containers.RepoFetcher.tryme.atPrefix": "@",
+  "boilerplate.containers.RepoFetcher.tryme.header": "來試試!",
+  "boilerplate.containers.RepoFetcher.tryme.message": "檢視Github repositories，使用者帳號："
+}
