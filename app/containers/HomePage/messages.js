@@ -10,23 +10,22 @@ export const scope = 'boilerplate.containers.HomePage';
 export default defineMessages({
   startProjectHeader: {
     id: `${scope}.start_project.header`,
-    defaultMessage: 'Start your next react project in seconds',
+    defaultMessage: 'Styled Components + Styled System 超方便！',
   },
-  startProjectMessage: {
-    id: `${scope}.start_project.message`,
-    defaultMessage:
-      'A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices',
+  isMobile: {
+    id: `${scope}.isMobile`,
+    defaultMessage: '手機版',
   },
-  trymeHeader: {
-    id: `${scope}.tryme.header`,
-    defaultMessage: 'Try me!',
+  about: {
+    id: `${scope}.buttons.about`,
+    defaultMessage: '關於',
   },
-  trymeMessage: {
-    id: `${scope}.tryme.message`,
-    defaultMessage: 'Show Github repositories by',
+  good: {
+    id: `${scope}.buttons.good`,
+    defaultMessage: '範例Button',
   },
-  trymeAtPrefix: {
-    id: `${scope}.tryme.atPrefix`,
-    defaultMessage: '@',
+  bad: {
+    id: `${scope}.buttons.bad`,
+    defaultMessage: '不可點',
   },
 });

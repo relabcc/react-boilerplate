@@ -52,7 +52,7 @@ export class HomePage extends React.PureComponent {
 
     return (
       <Section>
-        <Text.h2>
+        <Text.h2 my="0.5em">
           <FormattedMessage {...messages.trymeHeader} />
         </Text.h2>
         <Form onSubmit={this.props.onSubmitForm}>
