@@ -11,7 +11,14 @@
  */
 import { fromJS } from 'immutable';
 
-import { CHANGE_USERNAME } from './constants';
+export const CHANGE_USERNAME = 'boilerplate/Home/CHANGE_USERNAME';
+
+export function changeUsername(name) {
+  return {
+    type: CHANGE_USERNAME,
+    name,
+  };
+}
 
 // The initial state of the App
 export const initialState = fromJS({

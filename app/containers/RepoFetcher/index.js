@@ -25,10 +25,9 @@ import Form from './Form';
 import Input from './Input';
 import Section from './Section';
 import messages from './messages';
-import { loadRepos } from '../App/actions';
-import { changeUsername } from './actions';
+import { loadRepos } from '../App/reducer';
 import { makeSelectUsername } from './selectors';
-import reducer from './reducer';
+import reducer, { changeUsername } from './reducer';
 import saga from './saga';
 
 /* eslint-disable react/prefer-stateless-function */
