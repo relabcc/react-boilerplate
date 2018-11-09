@@ -12,10 +12,4 @@ export default defineMessages({
     id: `${scope}.license.message`,
     defaultMessage: 'This project is licensed under the MIT license.',
   },
-  authorMessage: {
-    id: `${scope}.author.message`,
-    defaultMessage: `
-      Made with love by {author}.
-    `,
-  },
 });

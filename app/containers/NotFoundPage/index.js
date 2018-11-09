@@ -7,15 +7,15 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 
-import H1 from 'components/H1';
+import Text from 'components/Text';
 import messages from './messages';
 
 export default function NotFound() {
   return (
     <article>
-      <H1>
+      <Text.h1>
         <FormattedMessage {...messages.header} />
-      </H1>
+      </Text.h1>
     </article>
   );
 }

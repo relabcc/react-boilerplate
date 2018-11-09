@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import NormalA from 'components/A';
+import NormalA from 'components/Link';
 
 const RepoLink = styled(NormalA)`
   height: 100%;

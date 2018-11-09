@@ -22,6 +22,7 @@ import App from 'containers/App';
 
 // Import Language Provider
 import LanguageProvider from 'containers/LanguageProvider';
+import ThemeProvider from 'components/ThemeProvider';
 
 // Load the favicon and the .htaccess file
 import '!file-loader?name=[name].[ext]!./images/favicon.ico';
@@ -50,9 +51,11 @@ const render = messages => {
   ReactDOM.render(
     <Provider store={store}>
       <LanguageProvider messages={messages}>
-        <ConnectedRouter history={history}>
-          <App />
-        </ConnectedRouter>
+        <ThemeProvider>
+          <ConnectedRouter history={history}>
+            <App />
+          </ConnectedRouter>
+        </ThemeProvider>
       </LanguageProvider>
     </Provider>,
     MOUNT_NODE,
@@ -77,7 +80,7 @@ if (!window.Intl) {
     .then(() =>
       Promise.all([
         import('intl/locale-data/jsonp/en.js'),
-        import('intl/locale-data/jsonp/de.js'),
+        import('intl/locale-data/jsonp/zh-Hant-TW.js'),
       ]),
     ) // eslint-disable-line prettier/prettier
     .then(() => render(translationMessages))
