@@ -1,8 +1,8 @@
 {
-  "apiKey": "AIzaSyAIX8Amv7FJBv-TgaRYggwor-2nEHzm_vA",
-  "authDomain": "re-form-test.firebaseapp.com",
-  "databaseURL": "https://re-form-test.firebaseio.com",
-  "projectId": "re-form-test",
-  "storageBucket": "re-form-test.appspot.com",
-  "messagingSenderId": "1077560987943"
+  "apiKey": "YOUR_API_KEY",
+  "authDomain": "YOUR_PROJECT_NAME.firebaseapp.com",
+  "databaseURL": "https://YOUR_PROJECT_NAME.firebaseio.com",
+  "projectId": "YOUR_PROJECT_NAME",
+  "storageBucket": "YOUR_PROJECT_NAME.appspot.com",
+  "messagingSenderId": "YOUR_MESSAGING_SENDER_ID"
 }
