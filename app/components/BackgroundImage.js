@@ -1,7 +1,5 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { ratio } from 'styled-system';
-
 import Box from './Box';
 
 const BackgroundImage = styled(Box)`
@@ -10,7 +8,7 @@ const BackgroundImage = styled(Box)`
   background-size: ${({ size }) => size};
   background-position: ${({ backgroundPosition }) => backgroundPosition};
   background-repeat: no-repeat;
-  ${props => (props.height ? '' : ratio(props))};
+  ${props => (props.height ? '' : `padding-top: ${props.ratio * 100}%;`)};
 `;
 
 BackgroundImage.propTypes = {
